@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comments</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <div class="feedback-box" id="feedback-box">
+        <h3>Give us your valuable feedback</h3>
+        <form action="#" method="post">
+            <div class="rating">
+                <input type="number" name="rating" hidden>
+                <i class="far fa-star "></i>
+                <i class="far fa-star "></i>
+                <i class="far fa-star "></i>
+                <i class="far fa-star "></i>
+                <i class="far fa-star "></i>
+            </div>
+            <p>Bình luận của bạn</p>
+            <textarea name="opinon" cols="30" rows="5" placeholder="Bình luận của bạn..."></textarea>
+            <p class="question">Bạn có muốn chia sẽ bình luận này không?</p>
+            <div class="radio-btns">
+                <div class="one-btn">
+                    <input type="radio" name="one" id="yes" class="radio">
+                    <label for="yes">yes</label>
+                </div>
+                <div class="one-btn">
+                    <input type="radio" name="one" id="no" class="radio">
+                    <label for="no">no</label>
+                </div>
+             </div>
+             <div class="infor-field">
+                <div class="name">
+                    <label>
+                        <input type="text">
+                        <span>Nickname</span>
+                    </label>
+                </div>
+                <div class="email">
+                    <label>
+                        <input type="text">
+                        <span>Email</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <select name="product" id="product">
+                        <option value="Phân Loại" selected>Phân Loại</option>
+                        <option value="tx">Trà sữa thái xanh</option>
+                        <option value="tt">Trà sữa thái đỏ</option>
+                        <option value="hn">Trà sữa hoa nhài</option>
+                        <option value="km">Trà sữa kem mặn</option>
+                    </select>
+                </div>
+             </div>
+             <div class="accept">
+                <input type="radio" id="accept" class="radio">
+                <label>I accept the <a href="#">term and condition</a></label>
+             </div>
+            
+            
+            <div class="btn-group"> 
+                <button type="submit" class="btn submit" id="button">Submit</button>
+                <button class="btn cancel">Cancel</button>    
+            </div>
+        </form> 
+     </div>
+     <a href="./comment.html" class="gotop"><img src="./images/gotop.png" alt="" width="50px"></a>
+     <script src="./script.js"></script>
+</body>
+</html>
